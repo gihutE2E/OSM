@@ -49,9 +49,9 @@
         </if>  
         
         <property name="deploy.sarLocation" 
-        	value="${proj.compositeDir}\deploy\sca_${proj.compositeName}_rev${proj.revision}.jar"/>
+        	value="C:Users\ctcatalan\Desktop\MDW\CRM\cd_crm\Artefactos\sca_${proj.compositeName}_rev${proj.revision}.jar"/>
         <property name="deploy.configplan"  
-        	value="${proj.compositeDir}\${proj.compositeName}\${deployment.plan.environment}.xml"/>
+        	value="C:Users\ctcatalan\Desktop\MDW\CRM\cd_crm\Artefactos\${proj.compositeName}\${deployment.plan.environment}.xml"/>
 
         <propertycopy name="deploy.serverURL"    from="${deployment.plan.environment}.serverURL"/>
         <propertycopy name="deploy.overwrite"    from="${deployment.plan.environment}.overwrite"/>
