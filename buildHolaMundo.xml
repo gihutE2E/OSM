@@ -43,15 +43,15 @@
             </ant>	
 
             <copy todir="builds\${build.number}" 
-                  file="${proj.compositeDir}\${proj.compositeName}\deploy\sca_${proj.compositeName}_rev${proj.revision}.jar"/>
+                  file="${proj.compositeDir}\deploy\sca_${proj.compositeName}_rev${proj.revision}.jar"/>
 
           </then>
         </if>  
         
         <property name="deploy.sarLocation" 
-        	value="${proj.compositeDir}\${proj.compositeName}\deploy\sca_${proj.compositeName}_rev${proj.revision}.jar"/>
+        	value="${proj.compositeDir}\deploy\sca_${proj.compositeName}_rev${proj.revision}.jar"/>
         <property name="deploy.configplan"  
-        	value="${proj.compositeDir}/\${proj.compositeName}\${deployment.plan.environment}.xml"/>
+        	value="${proj.compositeDir}\${proj.compositeName}\${deployment.plan.environment}.xml"/>
 
         <propertycopy name="deploy.serverURL"    from="${deployment.plan.environment}.serverURL"/>
         <propertycopy name="deploy.overwrite"    from="${deployment.plan.environment}.overwrite"/>
