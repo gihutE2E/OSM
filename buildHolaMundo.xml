@@ -51,7 +51,7 @@
         <property name="deploy.sarLocation" 
         	value="${tmp.sca.dir}\sca_${proj.compositeName}_rev${proj.revision}.jar"/>
         <property name="deploy.configplan"  
-        	value="${tmp.sca.dir}\${proj.compositeName}\${deployment.plan.environment}.xml"/>
+        	value="${tmp.sca.dir}\${deployment.plan.environment}.xml"/>
 
         <propertycopy name="deploy.serverURL"    from="${deployment.plan.environment}.serverURL"/>
         <propertycopy name="deploy.overwrite"    from="${deployment.plan.environment}.overwrite"/>
