@@ -3,7 +3,7 @@
 
     <property environment="env"/> 
 
-    <property file="https://github.com/gihutE2E/OSM/edit/master/buildHolaMundo.properties"/>  
+    <!--<property file="https://github.com/gihutE2E/OSM/edit/master/buildHolaMundo.properties"/>  -->
 
     <!-- Antcontrib path -->
     <path id="antcontrib.path">
