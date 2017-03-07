@@ -27,7 +27,7 @@
     	  <if> 
           <equals arg1="${demo.mode}" arg2="false"/>
           <then>
-            <ant antfile="${oracle.home}/bin/ant-sca-package.xml" inheritAll="false" target="package">
+            <ant antfile="${oracle.home}\bin\ant-sca-package.xml" inheritAll="false" target="package">
              <property name="compositeDir" value="${proj.compositeDir}"/>
              <property name="compositeName" value="${proj.compositeName}"/>
              <property name="revision" value="${proj.revision}"/>
