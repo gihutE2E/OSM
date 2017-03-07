@@ -16,43 +16,14 @@
 
 
     <target name="deployProject">
-        <echo message=" deploy project ${project} for environment ${deployment.plan.environment}------>${env.CURRENT_FOLDER}/build.properties"
-              level="info"/>
-        <echo file="logs/instance-${build.number}.log" append="true" 
-              message=" 2. ${line.separator}---->deployProject deploy project ${project} for environment ${deployment.plan.environment}${line.separator}------>${env.CURRENT_FOLDER}/build.properties"
-              level="info"/>
+       
 
         <property name="proj.compositeName" value="${project}"/>
         <property name="proj.compositeDir" value="${applications.home}"/>
           <propertycopy name="proj.revision" from="${project}.revision"/> 
        <propertycopy name="proj.enabled" from="${project}.enabled"/>
         <propertycopy name="proj.partition" from="${project}.partition"/>
-       
-        <echo file="logs/instance-${build.number}.log" append="true" 
-              message="${env.CURRENT_FOLDER}/${applications.home}/${application} "
-              level="error"/>
-
-        <echo message="partition ${proj.partition} compositeName ${proj.compositeName} compositeDir ${proj.compositeDir}"
-              level="info"/>
-
-        <echo file="logs/instance-${build.number}.log" append="true" 
-              message="---3. --->partition ${proj.partition}${line.separator}------>${env.CURRENT_FOLDER}/build.properties"
-              level="info"/>
-        <echo file="logs/instance-${build.number}.log" append="true" 
-              message="------>compositeName ${proj.compositeName}${line.separator}"
-              level="info"/>
-        <echo file="logs/instance-${build.number}.log" append="true" 
-              message="------>revision ${proj.revision}${line.separator}"
-              level="info"/>
-        <echo file="logs/instance-${build.number}.log" append="true" 
-              message="------>compositeDir ${proj.compositeDir}${line.separator}"
-              level="info"/>
-
-        <echo message="build sar package"
-              level="info"/>
-        <echo file="logs/instance-${build.number}.log" append="true" 
-              message="------>build sar package${line.separator}"
-              level="info"/>
+      
     	  <if> 
           <equals arg1="${demo.mode}" arg2="false"/>
           <then>
@@ -90,21 +61,6 @@
         <propertycopy name="deploy.server"       from="${deployment.plan.environment}.server"/>
         <propertycopy name="deploy.port"         from="${deployment.plan.environment}.port"/>
 
-        <echo message="deploy on ${deploy.serverURL} with user ${deploy.user}"
-              level="info"/>
-        <echo file="logs/instance-${build.number}.log" append="true" 
-              message="------>deploy on ${deploy.serverURL} with user ${deploy.user}${line.separator}"
-              level="info"/>
-
-        <echo message="deploy sarFile ${deploy.sarLocation}"
-              level="info"/>
-        <echo file="logs/instance-${build.number}.log" append="true" 
-              message="------>deploy sarFile ${deploy.sarLocation}${line.separator}"
-              level="info"/>
-
-        <echo file="logs/instance-${build.number}.log" append="true" 
-              message="------>deployment plan used ${deploy.configplan}${line.separator}"
-              level="info"/>
 
 
     	  <if> 
