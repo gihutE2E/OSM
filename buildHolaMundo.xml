@@ -36,7 +36,7 @@
              <property name="wl_home" value="${wl_home}"/>
              <property name="sca.application.home" value="${proj.compositeDir}"/>
              <property name="scac.application.home" value="${proj.compositeDir}"/>
-             <property name="scac.input" value="${proj.compositeDir}\${proj.compositeName}\composite.xml"/>
+             <property name="scac.input" value="${proj.compositeDir}\composite.xml"/>
              <property name="scac.output" value="${tmp.output.dir}/${proj.compositeName}.xml"/>
              <property name="scac.error" value="${tmp.output.dir}/${proj.compositeName}.err"/>
              <property name="scac.displayLevel" value="3"/>
