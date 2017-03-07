@@ -43,7 +43,7 @@
             </ant>	
 
             <copy todir="builds\${build.number}" 
-                  file="C:Users\ctcatalan\Desktop\MDW\CRM\cd_crm\Artefactos\sca_${proj.compositeName}_rev${proj.revision}.jar"/>
+                  file="${tmp.sca.dir}\sca_${proj.compositeName}_rev${proj.revision}.jar"/>
 
           </then>
         </if>  
